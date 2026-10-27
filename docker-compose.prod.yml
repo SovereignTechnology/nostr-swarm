@@ -39,9 +39,9 @@ services:
       WS_HOST: "127.0.0.1"       # WS/HTTP on loopback only; DHT UDP is a separate all-ifaces socket
       STORAGE_PATH: /data
       SWARM_TOPIC: nostr
-      RELAY_NAME: "SovIT Swarm Relay"
+      RELAY_NAME: "SovTech Swarm Relay"
       RELAY_DESCRIPTION: "Open peer-to-peer Nostr relay over Hyperswarm"
-      RELAY_CONTACT: "cameron@sovit.xyz"
+      RELAY_CONTACT: "services@sovtech.pro"
       RELAY_PUBKEY: ""           # <-- FILL IN: 64-char hex pubkey of the operator
       AUTO_ADMIT: "false"
       ACCEPT_OPTIMISTIC: "false"

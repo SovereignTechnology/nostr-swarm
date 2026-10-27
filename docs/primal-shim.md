@@ -41,7 +41,7 @@ nostr-swarm
 nostr-swarm primal-shim            # ws://localhost:8801 → ws://127.0.0.1:3000
 ```
 
-Then point a checkout of [swarm-client](https://github.com/sovITxyz/swarm-client)
+Then point a checkout of [swarm-client](https://github.com/SovereignTechnology/swarm-client)
 (our primal-web-app fork) at it. Either edit its `.env`:
 
 ```

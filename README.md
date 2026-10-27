@@ -34,7 +34,7 @@ npm install nostr-swarm
 ### From source
 
 ```bash
-git clone https://github.com/sovITxyz/nostr-swarm.git
+git clone https://github.com/SovereignTechnology/nostr-swarm.git
 cd nostr-swarm
 npm install
 npm run build
@@ -322,7 +322,7 @@ See [Web of Trust](docs/web-of-trust.md) for full details on scoring, muting, di
 
 ## Key Management with keytr
 
-[keytr](https://github.com/sovITxyz/keytr) provides passkey-based Nostr private key management. Instead of copying nsec strings between devices, keytr encrypts your private key with a WebAuthn passkey (Face ID, fingerprint, or hardware key) and publishes the encrypted blob as a kind:30079 event to Nostr relays -- including nostr-swarm peers.
+[keytr](https://github.com/SovereignTechnology/keytr) provides passkey-based Nostr private key management. Instead of copying nsec strings between devices, keytr encrypts your private key with a WebAuthn passkey (Face ID, fingerprint, or hardware key) and publishes the encrypted blob as a kind:30079 event to Nostr relays -- including nostr-swarm peers.
 
 ### How it works with nostr-swarm
 
@@ -367,7 +367,7 @@ const { nsecBytes, npub } = await loginWithKeytr(events)
 
 ### NIP-07 signing with keytr-connect
 
-[keytr-connect](https://github.com/sovITxyz/keytr-connect) bridges keytr to any Nostr client that supports `window.nostr` (NIP-07):
+[keytr-connect](https://github.com/SovereignTechnology/keytr-connect) bridges keytr to any Nostr client that supports `window.nostr` (NIP-07):
 
 ```typescript
 import { KeytrProvider } from '@sovit.xyz/keytr-connect'
@@ -383,7 +383,7 @@ provider.install() // Sets window.nostr -- clients can now sign events via passk
 
 ### Backup and recovery
 
-Register backup passkeys on separate gateways (e.g., keytr.org and nostkey.org) so losing one device doesn't mean losing your key. See the [keytr docs](https://github.com/sovITxyz/keytr) for details on the federated gateway model and recovery flows.
+Register backup passkeys on separate gateways (e.g., keytr.org and nostkey.org) so losing one device doesn't mean losing your key. See the [keytr docs](https://github.com/SovereignTechnology/keytr) for details on the federated gateway model and recovery flows.
 
 ## Primal web UI
 
@@ -397,7 +397,7 @@ nostr-swarm
 nostr-swarm primal-shim
 ```
 
-Point a [swarm-client](https://github.com/sovITxyz/swarm-client) checkout (our primal-web-app fork) at it (`.env`: `PRIMAL_CACHE_URL = "ws://localhost:8801"`, `PRIMAL_PRIORITY_RELAYS = "ws://localhost:3000"`, then `npm run dev -- --port 5174`). Feeds, threads, profiles, publishing, search, notifications, explore/trending, and direct messages work against the relay; Primal-cloud-only surfaces (Premium, wallet, DVM feeds, live streams) degrade to empty states. See [Primal cache shim](docs/primal-shim.md) for details, and [Deployment](docs/deployment.md) for running the relay + shim together (Procfile / docker-compose / nginx).
+Point a [swarm-client](https://github.com/SovereignTechnology/swarm-client) checkout (our primal-web-app fork) at it (`.env`: `PRIMAL_CACHE_URL = "ws://localhost:8801"`, `PRIMAL_PRIORITY_RELAYS = "ws://localhost:3000"`, then `npm run dev -- --port 5174`). Feeds, threads, profiles, publishing, search, notifications, explore/trending, and direct messages work against the relay; Primal-cloud-only surfaces (Premium, wallet, DVM feeds, live streams) degrade to empty states. See [Primal cache shim](docs/primal-shim.md) for details, and [Deployment](docs/deployment.md) for running the relay + shim together (Procfile / docker-compose / nginx).
 
 ## Documentation
 

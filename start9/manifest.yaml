@@ -11,10 +11,10 @@ release-notes: |
     replicated relay cannot honor "do not propagate"
   * Existing installs upgrade with zero action and keep their event store
 license: MIT
-wrapper-repo: "https://github.com/sovITxyz/nostr-swarm"
-upstream-repo: "https://github.com/sovITxyz/nostr-swarm"
-support-site: "https://github.com/sovITxyz/nostr-swarm/issues"
-marketing-site: "https://github.com/sovITxyz/nostr-swarm"
+wrapper-repo: "https://github.com/SovereignTechnology/nostr-swarm"
+upstream-repo: "https://github.com/SovereignTechnology/nostr-swarm"
+support-site: "https://github.com/SovereignTechnology/nostr-swarm/issues"
+marketing-site: "https://github.com/SovereignTechnology/nostr-swarm"
 build: ["make"]
 description:
   short: A fully peer-to-peer Nostr relay that syncs events over Hyperswarm.

@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sovITxyz/nostr-swarm.git"
+    "url": "git+https://github.com/SovereignTechnology/nostr-swarm.git"
   },
-  "author": "sovITxyz",
-  "homepage": "https://github.com/sovITxyz/nostr-swarm#readme",
+  "author": "Sovereign Technology (https://www.sovtech.pro/)",
+  "homepage": "https://github.com/SovereignTechnology/nostr-swarm#readme",
   "scripts": {
     "dev": "tsx src/cli.ts",
     "dev:shim": "tsx src/cli.ts primal-shim",

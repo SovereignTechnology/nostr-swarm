@@ -6,7 +6,7 @@ The UI experience has three moving parts:
 |---|---|---|
 | **relay** | `nostr-swarm` -- the NIP-01 Nostr relay | `ws://localhost:3000` |
 | **shim** | `nostr-swarm primal-shim` -- Primal cache-protocol adapter | `ws://localhost:8801` |
-| **UI** | [`sovITxyz/swarm-client`](https://github.com/sovITxyz/swarm-client) (Primal web-app fork, Vite) | dev: `http://localhost:5174` |
+| **UI** | [`SovereignTechnology/swarm-client`](https://github.com/SovereignTechnology/swarm-client) (Primal web-app fork, Vite) | dev: `http://localhost:5174` |
 
 The shim answers the proprietary Primal cache protocol from the relay; the UI talks to the shim (`PRIMAL_CACHE_URL`) for feeds and to the relay directly (`PRIMAL_PRIORITY_RELAYS`) for reads/publishing. The UI is a separate repo and is always run/built on its own -- the tooling below covers the relay + shim.
 
